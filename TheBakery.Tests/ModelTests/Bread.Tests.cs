@@ -18,10 +18,9 @@ namespace TheBakery.Tests
     public void TotalBreadCost_CostOfOneLoafWillBe5_True()
     {
       
-      Bread testBread = new Bread(1);
+      Bread testBread = new Bread(2);
       int testCost = testBread.TotalBreadCost();
-      int totalCost = 5;
-      Assert.AreEqual(totalCost, testCost);
+      Assert.AreEqual(10, testCost);
     }
   }
 }

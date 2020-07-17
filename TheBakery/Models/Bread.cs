@@ -14,7 +14,8 @@ namespace TheBakery.Models
     public int TotalBreadCost()
     {
       int breadTotalCost = 0; // Start totalCost at 0 
-      
+
+      breadTotalCost = (HowManyLoaves * 5);
 
       return breadTotalCost;  // return totalCost after calculations
     }
