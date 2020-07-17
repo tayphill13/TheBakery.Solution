@@ -35,5 +35,12 @@ namespace TheBakery.Tests
       int testCost = testBread.TotalBreadCost();
       Assert.AreEqual(15, testCost);
     }
+    [TestMethod]
+    public void TotalBreadCost_CostOf8LoavesWillBe30_True()
+    {
+      Bread testBread = new Bread(8);
+      int testCost = testBread.TotalBreadCost();
+      Assert.AreEqual(30, testCost);
+    }
   }
 }

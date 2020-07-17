@@ -29,6 +29,10 @@ namespace TheBakery.Models
         {
           breadTotalCost = (CostPerLoaf * (HowManyLoaves - 1)) - ((HowManyLoaves/3) * CostPerLoaf) + CostPerLoaf;
         }
+        else  // For (HowManyLoaves % 3 == 2)
+        {
+          // breadTotalCost = (CostPerLoaf * (HowManyLoaves -2)) - ((HowManyLoaves/3) * CostPerLoaf) + (CostPerLoaf * 2);
+        }
       }
       return breadTotalCost;  // return totalCost after calculations
     }
