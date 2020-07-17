@@ -4,15 +4,18 @@ using TheBakery.Models;
 namespace TheBakery.Tests
 {
   [TestClass]
-  public class Bread
+  public class BreadTests
   {
 
     [TestMethod]
-    public void NameOfMethod_DescriptionOfTest_ExpectedResult()
+    public void Bread_ConfirmPriceForLoafIs5_True()
     {
-      //Arrange
-      //Act
-      //Assert.AreEqual(ExpectedResult, Code_To_Test);
+      Bread testBread = new Bread();
+      int CostPerLoaf = 5;
+
+      bool NTest = Bread(CostPerLoaf);
+
+      Assert.AreEqual(true, NTest);
     }
   }
 }
