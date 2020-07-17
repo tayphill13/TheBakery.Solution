@@ -18,9 +18,12 @@ namespace TheBakery.Models
       string yesOrNo = Console.ReadLine();
       if (yesOrNo == "yes")
       {
-        Console.WriteLine("How many loaves of bread would you like today?");
+        Console.Write("How many loaves of bread would you like today:  ");
         int HowManyLoaves = int.Parse(Console.ReadLine());
-        Console.WriteLine(HowManyLoaves);
+        Console.WriteLine(" ---- ");
+        Console.Write("And any cinnamon roll pastries?:  ");
+        int HowManyRolls = int.Parse(Console.ReadLine());
+        Console.WriteLine("Ok, so that's " + HowManyLoaves + " Loaves of Bread and " + HowManyRolls + " cinnamon rolls");
       } 
       else if (yesOrNo == "no")
       {
