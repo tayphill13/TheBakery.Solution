@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using TheBakery.Models;
 
-namespace ProjectName.Tests
+namespace TheBakery.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class Bread
   {
 
     [TestMethod]
