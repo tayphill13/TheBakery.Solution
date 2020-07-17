@@ -1,4 +1,3 @@
-using System;
 
 namespace TheBakery.Models
 {
@@ -14,7 +13,7 @@ namespace TheBakery.Models
     }
     public int TotalBreadCost()
     {
-      int breadTotalCost = 0; // Start totalCost at 0 
+      int breadTotalCost = 0;
 
       if (HowManyLoaves % 3 == 0)
       {
