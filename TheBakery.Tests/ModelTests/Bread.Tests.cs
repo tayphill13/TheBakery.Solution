@@ -8,14 +8,11 @@ namespace TheBakery.Tests
   {
 
     [TestMethod]
-    public void BreadConstructor_ConfirmPriceFor1LoafIs5_True()
+    public void BreadConstructor_CreatesInstanceOfBread_True()
     {
       Bread testBread = new Bread(1);
-      int CostPerLoaf = 5;
 
-      bool NTest = Bread(1);
-
-      Assert.AreEqual(5, NTest);
+      Assert.AreEqual(typeof(Bread), testBread.GetType());
     }
   }
 }

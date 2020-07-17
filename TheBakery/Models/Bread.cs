@@ -5,6 +5,7 @@ namespace TheBakery.Models
   {
     public int HowManyLoaves { get; set; } // In order to specify number of loaves ordered by user
     public int CostPerLoaf { get; set; }
+    
     public Bread (int howManyLoaves)   // Bread Constructor
     {
       HowManyLoaves = howManyLoaves; // The two bread properties, how many and how much for each
