@@ -3,11 +3,11 @@ using System;
 using System.Collections.Generic;
 
 
-namespace TheBakery
+namespace TheBakery.Models
 {
   public class Program
   {
-    public static void Main()
+    public static void Main(string[] args)
     {
       Console.WriteLine("Welcome to Pierre's Bakery! Our baked goods are great and our specials will keep you coming back for more");
       Console.WriteLine("------------------------------------------------------------------------");
@@ -19,7 +19,9 @@ namespace TheBakery
       if (yesOrNo == "yes")
       {
         Console.WriteLine("How many loaves of bread would you like today?");
-      }
+        int HowManyLoaves = int.Parse(Console.ReadLine());
+        Console.WriteLine(HowManyLoaves);
+      } 
       else if (yesOrNo == "no")
       {
         Console.WriteLine("Not today?  Ok, well thanks for coming in, please visit again soon.");
