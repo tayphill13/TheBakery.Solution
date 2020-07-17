@@ -17,10 +17,16 @@ namespace TheBakery.Tests
     [TestMethod]
     public void TotalBreadCost_CostOfOneLoafWillBe5_True()
     {
-      
       Bread testBread = new Bread(2);
       int testCost = testBread.TotalBreadCost();
       Assert.AreEqual(10, testCost);
+    }
+    [TestMethod]
+    public void TotalBreadCost_SpecialsCostOf6LoavesWillBe20_True()
+    {
+      Bread testBread = new Bread(6);
+      int testCost = testBread.TotalBreadCost();
+      Assert.AreEqual(20, testCost);
     }
   }
 }
