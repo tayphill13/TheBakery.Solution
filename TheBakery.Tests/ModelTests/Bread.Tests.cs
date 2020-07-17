@@ -15,7 +15,7 @@ namespace TheBakery.Tests
       Assert.AreEqual(typeof(Bread), testBread.GetType());
     }
     [TestMethod]
-    public void TotalBreadCost_CostOfOneLoafWillBe5_True()
+    public void TotalBreadCost_CostOfTwoLoavesWillBe10_True()
     {
       Bread testBread = new Bread(2);
       int testCost = testBread.TotalBreadCost();
