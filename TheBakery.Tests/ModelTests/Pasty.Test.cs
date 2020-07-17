@@ -15,11 +15,11 @@ namespace TheBakery.Tests
     }
     [TestMethod]
     public void TotalPastryCost_CostOfOneRollWillBe2_True()
-      {
-        Pastry testPastry = new Pastry(1);
-        int testCost = testPastry.TotalPastryCost();
-        Assert.AreEqual(2, testCost);
-      }
+    {
+      Pastry testPastry = new Pastry(2);
+      int testCost = testPastry.TotalPastryCost();
+      Assert.AreEqual(4, testCost);
+    }
   }
     //Arrange
     //Act

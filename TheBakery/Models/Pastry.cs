@@ -15,13 +15,13 @@ namespace TheBakery.Models
     {
       int rollsTotalCost = 0;
       
-      if (HowManyRolls % 2 == 0)
+      if (HowManyRolls % 3 == 0)
       {
-        rollsTotalCost = ((HowManyRolls * 2)-((HowManyRolls/2) * CostPerRoll));
+        rollsTotalCost = ((HowManyRolls * 3)-((HowManyRolls/3) * CostPerRoll));
       }
-      else if (HowManyRolls % 2 == 1)
+      else
       {
-        rollsTotalCost = (CostPerRoll * (HowManyRolls - 1)) - ((HowManyRolls/2) * CostPerRoll) + CostPerRoll;
+        rollsTotalCost = (CostPerRoll * (HowManyRolls - 1)) - ((HowManyRolls/3) * CostPerRoll) + CostPerRoll;
       }
 
       return rollsTotalCost;  // return totalCost after calculations
