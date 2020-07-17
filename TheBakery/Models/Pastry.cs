@@ -17,7 +17,11 @@ namespace TheBakery.Models
       if (HowManyRolls % 2 == 0)
       {
         rollsTotalCost = ((HowManyRolls * 2)-((HowManyRolls/2) * CostPerRoll));
-      } // Start totalCost at 0 
+      }
+      else if (HowManyRolls % 2 == 1)
+      {
+        rollsTotalCost = (CostPerRoll * (HowManyRolls - 1)) - ((HowManyRolls/2) * CostPerRoll) + CostPerRoll;
+      }
 
       return rollsTotalCost;  // return totalCost after calculations
     }
