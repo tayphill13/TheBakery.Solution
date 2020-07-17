@@ -23,7 +23,7 @@ namespace TheBakery.Models
         Console.WriteLine(" ---- ");
         Console.Write("And any cinnamon roll pastries?:  ");
         int HowManyRolls = int.Parse(Console.ReadLine());
-        Console.WriteLine("Ok, so that's " + HowManyLoaves + " Loaves of Bread and " + HowManyRolls + " cinnamon rolls");
+        Console.WriteLine("Ok, so that's " + HowManyLoaves + " Loaves of Bread and " + HowManyRolls + " cinnamon rolls");  // I will need to add totalOrderCost
       } 
       else if (yesOrNo == "no")
       {
