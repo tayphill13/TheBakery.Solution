@@ -1,9 +1,9 @@
-using TheBakery.Models;
 using System;
 using System.Collections.Generic;
+using TheBakery.Models;
 
 
-namespace TheBakery.Models
+namespace TheBakery
 {
   public class Program
   {
@@ -23,7 +23,12 @@ namespace TheBakery.Models
         Console.WriteLine(" ---- ");
         Console.Write("And any cinnamon roll pastries?:  ");
         int HowManyRolls = int.Parse(Console.ReadLine());
-        Console.WriteLine("Ok, so that's " + HowManyLoaves + " Loaves of Bread and " + HowManyRolls + " cinnamon rolls");  // I will need to add totalOrderCost
+        Console.WriteLine(" ------------------------------------------------------------------------- ");
+        Console.WriteLine(" -------------------------------------------------- ");
+        Console.WriteLine(" -------------------------------- ");
+        Console.Write("Let me see if I have this correct:   ");
+        Console.WriteLine("That's an order for " + HowManyLoaves + " Loaves of Bread and " + HowManyRolls + " cinnamon rolls");
+        Console.WriteLine("Your total cost today is:  ");  //Add totalCost here
       } 
       else if (yesOrNo == "no")
       {

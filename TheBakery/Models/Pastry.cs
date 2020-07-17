@@ -1,9 +1,20 @@
 namespace TheBakery.Models
 {
-  public class Pastries
+  public class Pastry
   {
+    public int HowManyRolls { get; set; }
+    public int CostPerRoll { get; set; }
 
-    // properties, methods, etc. will go here.
+    public Pastry(int howManyRolls)    // Pastry Constructor
+    {
+      HowManyRolls = howManyRolls;    // The two pastry properties
+      CostPerRoll = 2;
+    }
+    public int TotalPastryCost()
+    {
+      int rollsTotalCost = 0; // Start totalCost at 0 
 
+      return rollsTotalCost;  // return totalCost after calculations
+    }
   }
 }

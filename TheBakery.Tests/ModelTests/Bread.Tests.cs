@@ -10,7 +10,7 @@ namespace TheBakery.Tests
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_True()   // I'm not 100% sure if this is a valid test of the constructor, but I have 
     {                                                            // but I have to move on.
-      int howManyLoaves = 1;                           // Passing in 1 loaf
+      int howManyLoaves = 1;                                     // Passing in 1 loaf
       Bread testBread = new Bread(howManyLoaves); 
       Assert.AreEqual(typeof(Bread), testBread.GetType());
     }
