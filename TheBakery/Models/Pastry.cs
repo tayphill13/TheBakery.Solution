@@ -12,7 +12,12 @@ namespace TheBakery.Models
     }
     public int TotalPastryCost()
     {
-      int rollsTotalCost = 0; // Start totalCost at 0 
+      int rollsTotalCost = 0;
+      
+      if (HowManyRolls % 2 == 0)
+      {
+        rollsTotalCost = ((HowManyRolls * 2)-((HowManyRolls/2) * CostPerRoll));
+      } // Start totalCost at 0 
 
       return rollsTotalCost;  // return totalCost after calculations
     }
