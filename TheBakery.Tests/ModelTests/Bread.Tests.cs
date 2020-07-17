@@ -14,14 +14,14 @@ namespace TheBakery.Tests
       Bread testBread = new Bread(howManyLoaves); 
       Assert.AreEqual(typeof(Bread), testBread.GetType());
     }
-    // [TestMethod]
-    // public void TotalBreadCost_TotalCostWillBeReturnedFor2BreadLoaves_True()
-    // {
-    //   Bread testBread = new Bread();
-
-      //Arrange
-      //Act
-      //Assert
-    // }
+    [TestMethod]
+    public void TotalBreadCost_TotalCostWillBeReturnedFor2BreadLoaves_True()
+    {
+      Bread testBread = new Bread();
+      int howManyLoaves = 2;
+      int testCost = testBread.TotalBreadCost(howManyLoaves);
+      int totalCost = 10;
+      Assert.AreEqual(totalCost, testCost);
+    }
   }
 }
