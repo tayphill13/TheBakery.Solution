@@ -1,17 +1,18 @@
-# _{Application Name}_
+# _The C# Bakery_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _A Bakery Console App for C# independent project, 7.17.20_
 
-#### By _**Your Name Here**_
+#### By _**Taylor Phillips**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This is an independent project to develop a console based application for a fictional bakery called, Pierre's Bakery.  The user will be informed of the options and specials and will be encouraged to select some baked goods for purchase.  The application will be able to calculate the total cost of the order and return that cost to the user._
 
 ## Specifications
 
 | Spec | Input | Output |
 | :--- | :---: | ---: |
+| 
 
 
 ## Setup/Installation Requirements
@@ -47,7 +48,8 @@ _Please reach out through my GitHub account._
 
 ### License
 
-Copyright (c) 2020 **_Your Name Here_**
+Copyright (c) 2020 **_Taylor Phillips_**   
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 *Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
