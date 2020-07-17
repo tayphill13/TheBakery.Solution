@@ -8,14 +8,14 @@ namespace TheBakery.Tests
   {
 
     [TestMethod]
-    public void Bread_ConfirmPriceForLoafIs5_True()
+    public void BreadConstructor_ConfirmPriceFor1LoafIs5_True()
     {
-      Bread testBread = new Bread();
+      Bread testBread = new Bread(1);
       int CostPerLoaf = 5;
 
-      bool NTest = Bread(CostPerLoaf);
+      bool NTest = Bread(1);
 
-      Assert.AreEqual(true, NTest);
+      Assert.AreEqual(5, NTest);
     }
   }
 }
