@@ -14,7 +14,8 @@ _This is an independent project to develop a console based application for a fic
 | :--- | :---: | ---: |
 | The Program will welcome the user in the Console  | dotnet run  | "Welcome to Pierre's Bakery!"  |
 | The Program will tell the user about specials and pricing of Bread and Pastries |   |  "Bread is $5 or buy 2 get 1 free! And Pastries are 1 for $2 and 3 for $5" |
-| The Program will ask the user how many they would like of each  |   | "Can we interest you in some Bread loaves or Pastries this morning?"  |
+| Program will ask user if they would like to make an order, if not it will end transaction   |  No   |  "...thanks for coming in, please visit again soon"    | 
+| If user decides to place an order then the Program will ask the user how many they would like of each  |   | "Can we interest you in some Bread loaves or Pastries this morning?"  |
 | The Program will calculate the cost based on amount of bread loaves or pastries ordered and return that cost to the user |  3 Bread Loaves, 2 pastries  | $14  |
 | Program will thank the user for stopping in   |   |  "Thank you for stopping in to Pierre's Bakery!"  |   
 
@@ -38,7 +39,7 @@ Running the program:
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_No known bugs, but the application is not finished at this time._
 
 ## Support and contact details
 
