@@ -10,13 +10,18 @@ namespace TheBakery.Tests
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_True()   // I'm not 100% sure if this is a valid test of the constructor, but I have 
     {                                                            // but I have to move on.
-      Bread testBread = new Bread(1);                            // Passing in 1 loaf
+      int howManyLoaves = 1;                           // Passing in 1 loaf
+      Bread testBread = new Bread(howManyLoaves); 
       Assert.AreEqual(typeof(Bread), testBread.GetType());
     }
-    [TestMethod]
-    public void MethodToTest_WhatImTestingFor_ExpectedOutput()
-    {
-      Bread testBread = new Bread();
-    }
+    // [TestMethod]
+    // public void TotalBreadCost_TotalCostWillBeReturnedFor2BreadLoaves_True()
+    // {
+    //   Bread testBread = new Bread();
+
+      //Arrange
+      //Act
+      //Assert
+    // }
   }
 }
