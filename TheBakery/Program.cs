@@ -33,7 +33,13 @@ namespace TheBakery
         Console.WriteLine(" -------------------------------- ");
         Console.Write("Let me see if I have this correct:   ");
         Console.WriteLine("That's an order for " + HowManyLoaves + " Loaves of Bread and " + HowManyRolls + " cinnamon rolls");
-        Console.WriteLine("Your total cost today is:  " + breadTotalCost);  //Add totalCost here
+        // Need UI Logic to calculate cost
+        Bread breadOrder = new Bread(HowManyLoaves);
+        Pastry pastryOrder = new Pastry(HowManyRolls);
+        int pastryCost = pastryOrder.TotalPastryCost();
+        int breadCost = breadOrder.TotalBreadCost();
+
+        Console.WriteLine("Your total cost today is:  " + "$" + (breadCost + pastryCost));  //Add totalCost here
         Console.ForegroundColor = ConsoleColor.DarkGray;
         Console.WriteLine(" -------------------------------------------- ");
         Console.ForegroundColor = ConsoleColor.DarkYellow;
