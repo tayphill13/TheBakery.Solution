@@ -34,7 +34,7 @@ namespace TheBakery.Models
           breadTotalCost = (CostPerLoaf * (HowManyLoaves -2)) - ((HowManyLoaves/3) * CostPerLoaf) + (CostPerLoaf * 2);
         }
       }
-      return breadTotalCost;  // return totalCost after calculations
+      return breadTotalCost;
     }
   }
 }

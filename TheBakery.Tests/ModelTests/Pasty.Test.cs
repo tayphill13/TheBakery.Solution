@@ -14,11 +14,12 @@ namespace TheBakery.Tests
       Assert.AreEqual(typeof(Pastry), testPastry.GetType());
     }
     [TestMethod]
-    public void TotalPastryCost_CostOfOneRollWillBe2_True()
+    public void TotalPastryCost_CostOfOneRollIs2_True()
     {
-      Pastry testPastry = new Pastry(2);
+      int howManyRolls = 3;
+      Pastry testPastry = new Pastry(howManyRolls);
       int testCost = testPastry.TotalPastryCost();
-      Assert.AreEqual(4, testCost);
+      Assert.AreEqual(5, testCost);
     }
   }
     //Arrange

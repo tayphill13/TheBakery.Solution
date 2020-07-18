@@ -16,6 +16,9 @@ namespace TheBakery
       Console.WriteLine("For pastries we have Cinnamon Rolls, they're $2, or you can get 3 for $5  -----  Recommended by kids!");
       Console.WriteLine("------------------------------------------------------------------------");
       Console.WriteLine("Would you like some bread or a pastry?");
+      Console.WriteLine(" -----------------------------------------------------------------------");
+      Console.WriteLine(" -----------------------------------------------------------------------");
+      Console.WriteLine(" -----------------------------------------------------------------------");
       string yesOrNo = Console.ReadLine().ToLower();
       if (yesOrNo == "yes")
       {
@@ -30,7 +33,7 @@ namespace TheBakery
         Console.WriteLine(" -------------------------------- ");
         Console.Write("Let me see if I have this correct:   ");
         Console.WriteLine("That's an order for " + HowManyLoaves + " Loaves of Bread and " + HowManyRolls + " cinnamon rolls");
-        Console.WriteLine("Your total cost today is:  ");  //Add totalCost here
+        Console.WriteLine("Your total cost today is:  " + breadTotalCost);  //Add totalCost here
         Console.ForegroundColor = ConsoleColor.DarkGray;
         Console.WriteLine(" -------------------------------------------- ");
         Console.ForegroundColor = ConsoleColor.DarkYellow;

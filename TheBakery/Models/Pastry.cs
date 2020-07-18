@@ -1,3 +1,4 @@
+using System;
 
 namespace TheBakery.Models
 {
@@ -15,13 +16,17 @@ namespace TheBakery.Models
     {
       int rollsTotalCost = 0;
       
-      if (HowManyRolls % 3 == 0)
+      if (HowManyRolls >= 3)
       {
-        rollsTotalCost = ((HowManyRolls * 3)-((HowManyRolls/3) * CostPerRoll));
+        int discountPastries = Convert.ToInt32(HowManyRolls/3);
+        Console.WriteLine(discountPastries);
+        rollsTotalCost = ((HowManyRolls - discountPastries) * 2) + discountPastries;
+        // int discountPastries = Convert.ToInt32(HowManyRolls/3);
+        // rollsTotalCost = ((HowManyRolls * 3)-(discountPastries) * CostPerRoll);
       }
       else
+        rollsTotalCost = HowManyRolls * 2;
       {
-        rollsTotalCost = (CostPerRoll * (HowManyRolls - 1)) - ((HowManyRolls/3) * CostPerRoll) + CostPerRoll;
       }
 
       return rollsTotalCost;  // return totalCost after calculations
