@@ -1,6 +1,6 @@
 # _The C# Bakery_
 
-#### _A Bakery Console App for C# independent project, 7.17.20_
+#### _A Bakery Console App for C# independent project, 7.18.20_
 
 #### By _**Taylor Phillips**_
 
