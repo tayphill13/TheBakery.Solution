@@ -19,14 +19,17 @@ namespace TheBakery
       Console.WriteLine("|Bread is $5 per loaf and if you buy 2, you can get a 3rd loaf for free!");
       Console.WriteLine("|For pastries we have Cinnamon Rolls, they're $2, or you can get 3 for $5  -----  Recommended by kids!");
       Console.WriteLine("|------------------------------------------------------------------------");
+      Console.WriteLine("|");
+      Console.WriteLine("|");
       Console.ForegroundColor = ConsoleColor.White;
       Console.WriteLine("|Would you like some bread or a pastry?  Yes or No");
+      Console.Write("|  ");
       string yesOrNo = Console.ReadLine().ToLower();
       Console.ForegroundColor = ConsoleColor.Yellow;
       Console.WriteLine("| ---------------------------------------------------------------------");
       Console.WriteLine("| ---------------------------------------------------------------------");
       Console.WriteLine("| ---------------------------------------------------------------------");
-      Console.WriteLine("| ");
+      Console.WriteLine("|");
       if (yesOrNo == "yes")
       {
         Console.ForegroundColor = ConsoleColor.Green;
@@ -42,31 +45,39 @@ namespace TheBakery
         Console.WriteLine("|       -------------------------------------------------");
         Console.WriteLine("| --------------------------------------------------------------------");
         Console.ForegroundColor = ConsoleColor.White;
-        Console.Write("|Let me see if I have this correct:   ");
+        Console.WriteLine("|      Let me see if I have this correct:");
         Console.ForegroundColor = ConsoleColor.DarkCyan;
-        Console.WriteLine("That's an order for " + HowManyLoaves + " loaves of bread and " + HowManyRolls + " cinnamon rolls");
+        Console.WriteLine("|   --> That's an order for " + HowManyLoaves + " loaves of bread and " + HowManyRolls + " cinnamon rolls <--");
         Bread breadOrder = new Bread(HowManyLoaves);
         Pastry pastryOrder = new Pastry(HowManyRolls);
         int pastryCost = pastryOrder.TotalPastryCost();
         int breadCost = breadOrder.TotalBreadCost();
-        Console.WriteLine("|Your total cost today is:  " + "$" + (breadCost + pastryCost));
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.WriteLine("|   --> Your total cost today is:  " + "$" + (breadCost + pastryCost)+ " <--");
 
         Console.ForegroundColor = ConsoleColor.DarkGray;
-        Console.WriteLine("| -------------------------------------------- ");
+        Console.WriteLine("|--------------------------------------------------------------------|");
         Console.ForegroundColor = ConsoleColor.DarkYellow;
-        Console.WriteLine("|Thanks for coming in today, we hope to see you again soon!");
+        Console.WriteLine("         Thanks for coming in today, we hope to see you again soon!");
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
       } 
       else if (yesOrNo == "no")
       {
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.WriteLine("|    -----------------------------------------------------------------");
+        Console.WriteLine("|       -------------------------------------------------------------");
+        Console.WriteLine("|        ---------------------------------------------------------");
+        Console.WriteLine("|          -----------------------------------------------------");
+        Console.WriteLine("|        ---------------------------------------------------------");
+        Console.WriteLine("|       ------------------------------------------------------------");
+        Console.WriteLine("|    -----------------------------------------------------------------");
+        Console.WriteLine();
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("| -----------------------------------------------------------------");
-        Console.WriteLine("|   -------------------------------------------------------------");
-        Console.WriteLine("|     ---------------------------------------------------------");
-        Console.WriteLine("|       -----------------------------------------------------");
-        Console.WriteLine("|     ---------------------------------------------------------");
-        Console.WriteLine("|    ------------------------------------------------------------");
-        Console.WriteLine("| -----------------------------------------------------------------");
-        Console.WriteLine("|Not today?  Ok, well thanks for coming in, please visit again soon.");
+        Console.WriteLine("       Not today?  Ok, well thanks for coming in, please visit again soon.");
+        Console.WriteLine();
+        Console.WriteLine();
       }
     }
   }
