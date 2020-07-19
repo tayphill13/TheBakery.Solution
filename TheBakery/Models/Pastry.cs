@@ -26,7 +26,7 @@ namespace TheBakery.Models
       {
       }
 
-      return rollsTotalCost;  // return totalCost after calculations
+      return rollsTotalCost;
     }
   }
 }
