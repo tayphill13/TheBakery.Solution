@@ -67,8 +67,8 @@ namespace TheBakery
         Console.ForegroundColor = ConsoleColor.DarkGray;
         Console.WriteLine("|--------------------------------------------------------------------|");
         Console.ForegroundColor = ConsoleColor.DarkYellow;
-        Console.WriteLine("         Thanks for coming in today, we hope to see you again soon! ");
-        Console.WriteLine();
+        Console.WriteLine("|        Thanks for coming in today, we hope to see you again soon!  |");
+        Console.WriteLine("|--------------------------------------------------------------------|");
         Console.WriteLine();
         Console.WriteLine();
       } 
