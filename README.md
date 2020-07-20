@@ -26,8 +26,8 @@ Software Requirements
 2. A code editor (Visual Studio Code, Atom, etc.)
 
 Acquire The Repo:
-1. Click the 'Clone or Download Button
-2. Alternately, Clone via Bash/GitBash: `git clone {repo}`
+1. Click the 'Clone or Download Button at [Repo](https://github.com/tayphill13/TheBakery.Solution.git)
+2. If cloning, Clone via computer's Command Line terminal: `git clone {repo url}`
 
 Editting the Code Base:
 1. Open the project in your code editor; with Bash, this is done by navigating to the project directory, then `code .`
