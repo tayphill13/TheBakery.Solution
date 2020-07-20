@@ -6,9 +6,9 @@ namespace TheBakery.Models
     public int HowManyLoaves { get; set; }
     public int CostPerLoaf { get; set; }
 
-    public Bread (int howManyLoaves)    // Bread Constructor
+    public Bread (int howManyLoaves) 
     {
-      HowManyLoaves = howManyLoaves;    // The two bread properties
+      HowManyLoaves = howManyLoaves;
       CostPerLoaf = 5;
     }
     public int TotalBreadCost()
@@ -29,7 +29,7 @@ namespace TheBakery.Models
         {
           breadTotalCost = (CostPerLoaf * (HowManyLoaves - 1)) - ((HowManyLoaves/3) * CostPerLoaf) + CostPerLoaf;
         }
-        else  // For (HowManyLoaves % 3 == 2)
+        else
         {
           breadTotalCost = (CostPerLoaf * (HowManyLoaves -2)) - ((HowManyLoaves/3) * CostPerLoaf) + (CostPerLoaf * 2);
         }

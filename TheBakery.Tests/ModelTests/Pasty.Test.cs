@@ -22,7 +22,4 @@ namespace TheBakery.Tests
       Assert.AreEqual(5, testCost);
     }
   }
-    //Arrange
-    //Act
-    //Assert.AreEqual(ExpectedResult, Code_To_Test);
 }
