@@ -16,12 +16,12 @@ namespace TheBakery.Models
     {
       int rollsTotalCost = 0;
       
-      // if (HowManyRolls >= 3)
-      // {
-      //   int discountPastries = Convert.ToInt32(HowManyRolls/3);
-      //   rollsTotalCost = (((HowManyRolls - discountPastries) * 2) + discountPastries);
-      // }
-      // else
+      if (HowManyRolls >= 3)
+      {
+        int discountPastries = Convert.ToInt32(HowManyRolls/3);
+        rollsTotalCost = (((HowManyRolls - discountPastries) * 2) + discountPastries);
+      }
+      else
       {
         rollsTotalCost = HowManyRolls * 2;
       }

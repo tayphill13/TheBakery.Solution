@@ -23,28 +23,28 @@ namespace TheBakery.Tests
     }
     
     [TestMethod]
-    public void TotalPastryCost_CostOf4RollsIs8_True()
+    public void TotalPastryCost_CostOf4RollsIs7_True()
     {
       int howManyRolls = 4;
       Pastry testPastry = new Pastry(howManyRolls);
       int testCost = testPastry.TotalPastryCost();
-      Assert.AreEqual(8, testCost);
+      Assert.AreEqual(7, testCost);
     }
-  //   [TestMethod]
-  //   public void TotalPastryCost_CostOf10RollsShouldBe17_True()
-  //   {
-  //     int howManyRolls = 10;
-  //     Pastry testPastry = new Pastry(howManyRolls);
-  //     int testCost = testPastry.TotalPastryCost();
-  //     Assert.AreEqual(17, testCost); 
-  //   }
-  //   [TestMethod]
-  //   public void TotalPastryCost_CostOf40RollsShouldBe67_True()
-  //   {
-  //     int howManyRolls = 40;
-  //     Pastry testPastry = new Pastry(howManyRolls);
-  //     int testCost = testPastry.TotalPastryCost();
-  //     Assert.AreEqual(67, testCost);
-  //   }
+    [TestMethod]
+    public void TotalPastryCost_CostOf10RollsShouldBe17_True()
+    {
+      int howManyRolls = 10;
+      Pastry testPastry = new Pastry(howManyRolls);
+      int testCost = testPastry.TotalPastryCost();
+      Assert.AreEqual(17, testCost); 
+    }
+    [TestMethod]
+    public void TotalPastryCost_CostOf40RollsShouldBe67_True()
+    {
+      int howManyRolls = 40;
+      Pastry testPastry = new Pastry(howManyRolls);
+      int testCost = testPastry.TotalPastryCost();
+      Assert.AreEqual(67, testCost);
+    }
   }
 }
