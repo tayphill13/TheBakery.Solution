@@ -37,5 +37,13 @@ namespace TheBakery.Tests
       int testCost = testPastry.TotalPastryCost();
       Assert.AreEqual(17, testCost); 
     }
+    [TestMethod]
+    public void TotalPastryCost_CostOf40RollsShouldBe67_True()
+    {
+      int howManyRolls = 40;
+      Pastry testPastry = new Pastry(howManyRolls);
+      int testCost = testPastry.TotalPastryCost();
+      Assert.AreEqual(67, testCost);
+    }
   }
 }
