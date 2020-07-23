@@ -4,7 +4,7 @@ using TheBakery.Models;
 namespace TheBakery.Tests
 {
   [TestClass]
-  public class Pastries
+  public class PastryTests
   {
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_True()   
