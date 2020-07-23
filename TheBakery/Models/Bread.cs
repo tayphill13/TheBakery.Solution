@@ -5,7 +5,7 @@ namespace TheBakery.Models
   {
     public int HowManyLoaves { get; set; }
     public int CostPerLoaf { get; set; }
-
+    
     public Bread (int howManyLoaves) 
     {
       HowManyLoaves = howManyLoaves;

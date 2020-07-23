@@ -32,6 +32,7 @@ namespace TheBakery
       Console.WriteLine("| ---------------------------------------------------------------------");
       Console.WriteLine("| ---------------------------------------------------------------------");
       Console.WriteLine("|");
+      
       if (yesOrNo == "yes")
       {
         Console.ForegroundColor = ConsoleColor.Green;
