@@ -22,9 +22,9 @@ namespace TheBakery.Models
       //   rollsTotalCost = (((HowManyRolls - discountPastries) * 2) + discountPastries);
       // }
       // else
-      // {
-      //   rollsTotalCost = HowManyRolls * 2;
-      // }
+      {
+        rollsTotalCost = HowManyRolls * 2;
+      }
 
       return rollsTotalCost;
     }
