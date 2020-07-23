@@ -16,10 +16,18 @@ namespace TheBakery.Tests
     [TestMethod]
     public void TotalPastryCost_CostOfOneRollIs2_True()
     {
-      int howManyRolls = 3;
+      int howManyRolls = 1;
       Pastry testPastry = new Pastry(howManyRolls);
       int testCost = testPastry.TotalPastryCost();
-      Assert.AreEqual(5, testCost);
+      Assert.AreEqual(2, testCost);
+    }
+    [TestMethod]
+    public void TotalPastryCost_CostOf4RollsIs7_True()
+    {
+      int howManyRolls = 4;
+      Pastry testPastry = new Pastry(howManyRolls);
+      int testCost = testPastry.TotalPastryCost();
+      Assert.AreEqual(7, testCost);
     }
   }
 }
