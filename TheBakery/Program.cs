@@ -33,7 +33,7 @@ namespace TheBakery
       Console.WriteLine("| ---------------------------------------------------------------------");
       Console.WriteLine("|");
       
-      if (yesOrNo == "yes")
+      if (yesOrNo == "yes" || yesOrNo == "y")
       {
         Console.ForegroundColor = ConsoleColor.Green;
         Console.Write("|  How many loaves of bread would you like today:  ");
@@ -73,7 +73,7 @@ namespace TheBakery
         Console.WriteLine();
         Console.WriteLine();
       } 
-      else if (yesOrNo == "no")
+      else if (yesOrNo == "no" || yesOrNo == "n")
       {
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("|    -----------------------------------------------------------------");
